@@ -4,3 +4,4 @@ ruby "2.1.2"
 
 gem "faraday"
 gem "pry"
+gem "rspec"
