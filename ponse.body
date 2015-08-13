@@ -1,0 +1,48 @@
+=> [32m#<Faraday::Response:0x00000001a3e1b0[0m
+ @env[32m=[0m
+  [32m#<struct Faraday::Env[0m
+   method[32m=[0m[33m:get[0m,
+   body[32m=[0m
+    [31m[1;31m"[0m[31m{[1;35m\"[0m[31mStatus[1;35m\"[0m[31m:[1;35m\"[0m[31mSUCCESS[1;35m\"[0m[31m,[1;35m\"[0m[31mName[1;35m\"[0m[31m:[1;35m\"[0m[31mTesla Motors Inc[1;35m\"[0m[31m,[1;35m\"[0m[31mSymbol[1;35m\"[0m[31m:[1;35m\"[0m[31mTSLA[1;35m\"[0m[31m,[1;35m\"[0m[31mLastPrice[1;35m\"[0m[31m:240.53,[1;35m\"[0m[31mChange[1;35m\"[0m[31m:2.36000000000001,[1;35m\"[0m[31mChangePercent[1;35m\"[0m[31m:0.990888860897684,[1;35m\"[0m[31mTimestamp[1;35m\"[0m[31m:[1;35m\"[0m[31mThu Aug 13 13:29:27 UTC-04:00 2015[1;35m\"[0m[31m,[1;35m\"[0m[31mMSDate[1;35m\"[0m[31m:42229.5621180566,[1;35m\"[0m[31mMarketCap[1;35m\"[0m[31m:30581465260,[1;35m\"[0m[31mVolume[1;35m\"[0m[31m:144860,[1;35m\"[0m[31mChangeYTD[1;35m\"[0m[31m:222.41,[1;35m\"[0m[31mChangePercentYTD[1;35m\"[0m[31m:8.14711568724428,[1;35m\"[0m[31mHigh[1;35m\"[0m[31m:246.27,[1;35m\"[0m[31mLow[1;35m\"[0m[31m:239.88,[1;35m\"[0m[31mOpen[1;35m\"[0m[31m:239.88}[1;31m"[0m[31m[0m,
+   url[32m=[0m
+    [32m#<URI::HTTP:0x00000001a4a5c8 URL:http://dev.markitondemand.com/Api/v2/Quote/json?symbol=TSLA>[0m,
+   request[32m=[0m
+    [32m#<struct Faraday::RequestOptions[0m
+     params_encoder[32m=[0m[1;36mnil[0m,
+     proxy[32m=[0m[1;36mnil[0m,
+     bind[32m=[0m[1;36mnil[0m,
+     timeout[32m=[0m[1;36mnil[0m,
+     open_timeout[32m=[0m[1;36mnil[0m,
+     boundary[32m=[0m[1;36mnil[0m,
+     oauth[32m=[0m[1;36mnil[0m[32m>[0m,
+   request_headers[32m=[0m{[31m[1;31m"[0m[31mUser-Agent[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mFaraday v0.9.1[1;31m"[0m[31m[0m},
+   ssl[32m=[0m
+    [32m#<struct Faraday::SSLOptions[0m
+     verify[32m=[0m[1;36mnil[0m,
+     ca_file[32m=[0m[1;36mnil[0m,
+     ca_path[32m=[0m[1;36mnil[0m,
+     verify_mode[32m=[0m[1;36mnil[0m,
+     cert_store[32m=[0m[1;36mnil[0m,
+     client_cert[32m=[0m[1;36mnil[0m,
+     client_key[32m=[0m[1;36mnil[0m,
+     certificate[32m=[0m[1;36mnil[0m,
+     private_key[32m=[0m[1;36mnil[0m,
+     verify_depth[32m=[0m[1;36mnil[0m,
+     version[32m=[0m[1;36mnil[0m[32m>[0m,
+   parallel_manager[32m=[0m[1;36mnil[0m,
+   params[32m=[0m[1;36mnil[0m,
+   response[32m=[0m[1;36mnil[0m,
+   response_headers[32m=[0m
+    {[31m[1;31m"[0m[31mcache-control[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mprivate[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mconnection[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mclose[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mdate[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mThu, 13 Aug 2015 17:29:55 GMT[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mcontent-length[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31m352[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mcontent-type[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mtext/javascript; charset=UTF-8[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mserver[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mMicrosoft-IIS/6.0[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mx-powered-by[1;31m"[0m[31m[0m=>[31m[1;31m"[0m[31mASP.NET[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mp3p[1;31m"[0m[31m[0m=>
+      [31m[1;31m"[0m[31mCP=[1;35m\"[0m[31mNON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND[1;35m\"[0m[31m, policyref=[1;35m\"[0m[31m/w3c/p3p.xml[1;35m\"[0m[31m[1;31m"[0m[31m[0m,
+     [31m[1;31m"[0m[31mset-cookie[1;31m"[0m[31m[0m=>
+      [31m[1;31m"[0m[31m3481%5F0=FE0CDB154E73B595511291A041352983; path=/; HttpOnly, GZIP=1; expires=Tue, 11-Aug-2020 17:29:55 GMT; path=/[1;31m"[0m[31m[0m},
+   status[32m=[0m[1;34m200[0m[32m>[0m,
+ @on_complete_callbacks[32m=[0m[][32m>[0m

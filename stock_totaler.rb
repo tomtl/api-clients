@@ -9,7 +9,7 @@ def calculate_value(symbol, quantity)
   data = JSON.load(response.body)
   
   price = data["LastPrice"]
-  total = price.to_f * quantity.to_i
+  price.to_f * quantity.to_i
 end
 
 symbol, quantity = ARGV
