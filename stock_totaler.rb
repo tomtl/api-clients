@@ -2,6 +2,7 @@ require "json"
 require "faraday"
 
 class SymbolNotFound < StandardError; end
+class RequestFailed < StandardError; end
 
 def calculate_value(symbol, quantity)
   url = "http://dev.markitondemand.com/Api/v2/Quote/json"
@@ -13,8 +14,11 @@ def calculate_value(symbol, quantity)
   price = data["LastPrice"]
   raise SymbolNotFound.new(data["Message"]) unless price
   price.to_f * quantity.to_i
-
+rescue Faraday::Error => e
+  raise RequestFailed, e.message, e.backtrace
 end
 
-symbol, quantity = ARGV
-puts calculate_value(symbol, quantity) if $0 == __FILE__
+if $0 == __FILE__
+  symbol, quantity = ARGV
+  puts calculate_value(symbol, quantity)
+end
