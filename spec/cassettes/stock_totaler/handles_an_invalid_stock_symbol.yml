@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://dev.markitondemand.com/Api/v2/Quote/json?symbol=TSLA
+    uri: http://dev.markitondemand.com/Api/v2/Quote/json?symbol=ZZZZ
     body:
       encoding: US-ASCII
       string: ''
@@ -23,7 +23,7 @@ http_interactions:
       Date:
       - Mon, 17 Aug 2015 15:29:00 GMT
       Content-Length:
-      - '336'
+      - '111'
       Content-Type:
       - text/javascript; charset=UTF-8
       Server:
@@ -34,12 +34,12 @@ http_interactions:
       - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
         policyref="/w3c/p3p.xml"
       Set-Cookie:
-      - 3481%5F0=F761401F0DDF817B005181A65A2C9271; path=/; HttpOnly
+      - 3481%5F0=658E9F95E3B324E0BFBDE0FC6CF556A2; path=/; HttpOnly
       - GZIP=1; expires=Sat, 15-Aug-2020 15:29:00 GMT; path=/
     body:
       encoding: UTF-8
-      string: '{"Status":"SUCCESS","Name":"Tesla Motors Inc","Symbol":"TSLA","LastPrice":251.15,"Change":8,"ChangePercent":3.29015011309891,"Timestamp":"Mon
-        Aug 17 11:27:20 UTC-04:00 2015","MSDate":42233.4773148148,"MarketCap":31931713300,"Volume":145255,"ChangeYTD":222.41,"ChangePercentYTD":12.9220808416888,"High":256.27,"Low":250.61,"Open":255.69}'
+      string: '{"Message":"No symbol matches found for ZZZZ. Try another symbol such
+        as MSFT or AAPL, or use the Lookup API."}'
     http_version: 
   recorded_at: Mon, 17 Aug 2015 15:29:00 GMT
 recorded_with: VCR 2.9.3
