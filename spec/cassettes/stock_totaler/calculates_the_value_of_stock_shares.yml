@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://dev.markitondemand.com/Api/v2/Quote/json?symbol=TSLA
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.1
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - private
+      Date:
+      - Mon, 17 Aug 2015 13:51:36 GMT
+      Content-Length:
+      - '349'
+      Content-Type:
+      - text/javascript; charset=UTF-8
+      Server:
+      - Microsoft-IIS/6.0
+      X-Powered-By:
+      - ASP.NET
+      P3p:
+      - CP="NON PHY ONL UNI PUR FIN COM NAV INT DEM STA HEA CUR ADM DEV OUR IND",
+        policyref="/w3c/p3p.xml"
+      Set-Cookie:
+      - 3481%5F0=BCB29EA7BE0A86300F01FF4330AA5FFB; path=/; HttpOnly
+      - GZIP=1; expires=Sat, 15-Aug-2020 13:51:36 GMT; path=/
+    body:
+      encoding: UTF-8
+      string: '{"Status":"SUCCESS","Name":"Tesla Motors Inc","Symbol":"TSLA","LastPrice":252.07,"Change":8.91999999999999,"ChangePercent":3.66851737610528,"Timestamp":"Mon
+        Aug 17 09:51:32 UTC-04:00 2015","MSDate":42233.410787037,"MarketCap":32048683940,"Volume":81484,"ChangeYTD":222.41,"ChangePercentYTD":13.3357313070455,"High":256.27,"Low":251.71,"Open":255.69}'
+    http_version: 
+  recorded_at: Mon, 17 Aug 2015 13:51:36 GMT
+recorded_with: VCR 2.9.3
